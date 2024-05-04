@@ -1,0 +1,12 @@
+.label {
+  @apply text-xl relative top-3 text-zinc-300;
+}
+
+.input {
+  @apply text-xl p-4 w-96 rounded-md bg-zinc-200;
+}
+
+.inputEmpty {
+  @apply input;
+  @apply bg-red-300 text-red-900;
+}
