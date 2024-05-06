@@ -1,11 +1,17 @@
 import Logo from "./Logo";
 import Menu from "./Menu";
 
-export default function Sidebar() {
+interface SidebarProps {
+  className?: string
+}
+
+export default function Sidebar(props: SidebarProps) {
   return (
-    <div className="flex flex-col gap-5" >
+    <div className={`absolute sm:static 
+    sm:flex flex-col z-20 
+    ${props.className}`} >
       <Logo />
-      <Menu/>
+      <Menu />
     </div>
   );
 }

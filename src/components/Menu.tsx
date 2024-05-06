@@ -5,8 +5,8 @@ export default function Menu() {
   return (
     <div
       className={`
-        flex flex-col justify-start 
-        p-2 gap-2 text-3xl bg-black w-72 overflow-auto`}
+        flex flex-col justify-start h-screen
+        p-2 gap-2 text-3xl bg-black sm:min-w-32 overflow-auto`}
     >
       <MenuItem
         icon={<IconCreditCard />}

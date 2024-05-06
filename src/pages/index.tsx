@@ -8,7 +8,7 @@ export default function Home() {
       titulo="Projetos React e TailwindCSS"
       subtitulo="Bem Vindos"
     >
-      <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="flex flex-col justify-center items-center w-full h-screen sm:h-full">
         <div className="flex items-center gap-5">
           <IconBrandReact size={200} stroke={1} /> +
           <IconBrandTailwind size={200} stroke={1} />

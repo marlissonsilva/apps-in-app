@@ -3,7 +3,8 @@
 }
 
 .input {
-  @apply text-xl p-4 w-96 rounded-md bg-zinc-200;
+  @apply text-xl p-2 w-[100%] rounded-md bg-zinc-200;
+  @apply md:p-4 md:w-96;
 }
 
 .inputEmpty {
