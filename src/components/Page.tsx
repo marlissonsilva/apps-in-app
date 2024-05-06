@@ -14,6 +14,7 @@ interface PageProps {
   titulo: string
   subtitulo: string
   children: any
+  className?: string
 }
 
 export default function Page(props: PageProps) {
@@ -22,8 +23,8 @@ export default function Page(props: PageProps) {
     setIsOpenMenu(!isOpenMenu)
   }
   return (
-    <div className={`flex h-screen ${roboto.className} `}>
-      <Sidebar className={isOpenMenu ? 'flex' : 'hidden'} />
+    <div className={`flex min-h-screen ${roboto.className} `}>
+      <Sidebar className={isOpenMenu ? 'flex' : 'hidden'}/>
       <div className={`flex flex-col flex-1`}>
         <Header
           titulo={props.titulo}

@@ -3,7 +3,7 @@
 }
 
 .input {
-  @apply text-xl p-2 w-[100%] rounded-md bg-zinc-200;
+  @apply text-xl p-2 w-[100vw] max-w-[450px] rounded-md bg-zinc-200;
   @apply md:p-4 md:w-96;
 }
 

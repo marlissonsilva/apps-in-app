@@ -67,25 +67,27 @@ export default function CardInterative() {
     }
 
     return (
-        <Page titulo="Cartão Interativo" subtitulo="Preenchimento de cartão ">
+        <Page titulo="Cartão Interativo" subtitulo="Preenchimento de cartão " className="">
             <Flex centerCross centerMain gap={10}
-                className="w-full h-full bg-gradient-to-tr to-purple-900 from-red-600" >
+                className="
+                flex-col xl:flex-row md:h-full px-6 py-4
+                w-full bg-gradient-to-tr to-purple-900 from-red-600" >
                 <Flex centerCross centerMain col>
-                    <Card className="justify-between p-8">
-                        <span className="text-4xl">{number ? number : NumberCard}</span>
-                        <Flex className="justify-between ">
+                    <Card className="justify-between p-8 ">
+                        <span className="text-2xl sm:text-4xl">{number ? number : NumberCard}</span>
+                        <Flex className="justify-between items-center">
                             <span className="text-xl uppercase overflow-hidden  max-w-80">{name ? name : 'seu nome'}</span>
                             <span className="text-2xl">{validity ? validity : valorInicial}</span>
                         </Flex>
                     </Card>
-                    <Card className="justify-around p-8 ml-40">
+                    <Card className="justify-around p-8 xl:ml-20">
                         <Flex className="justify-end items-end h-full">
                             <span className="text-2xl">{code == "" ? "000" : code}</span>
                         </Flex>
                     </Card>
                 </Flex>
                 <Flex centerCross
-                    className="h-full text-black">
+                    className="text-black">
                     <form className="flex flex-col gap-5 ">
                         <label
                             className="label"
@@ -102,7 +104,7 @@ export default function CardInterative() {
                             className="label"
                             htmlFor="name">Nome do titular</label>
                         <input
-                            className="input text-sm"
+                            className="input"
                             id="name"
                             type="text"
                             maxLength={24}

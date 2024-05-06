@@ -7,7 +7,7 @@ export default function Content(props: ContentProps) {
     <div
       className={`
       flex items-start flex-1 
-      bg-zinc-900 text-3xl 
+      bg-zinc-900 text-3xl overflow-auto h-screen 
       `}
     >
       {props.children}

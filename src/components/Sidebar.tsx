@@ -8,7 +8,7 @@ interface SidebarProps {
 export default function Sidebar(props: SidebarProps) {
   return (
     <div className={`absolute sm:static 
-    sm:flex flex-col z-20 
+    sm:flex flex-col z-30
     ${props.className}`} >
       <Logo />
       <Menu />
